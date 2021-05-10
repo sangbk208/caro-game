@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Caro</title>
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="main main__left">
+            <p class="main__point" id="player-x-score">0</p>
+            <p class="main__player">Player 1</p>
+            <img src="./assets/images/Xpng.png"></img>
+            <p id="winner-player1" class="main__player-win"></p>
+        </div>
+        <div class="main main__middle">
+            <div class="main__logo">
+                <img class="main__logo-img" src="./assets/images/logo.png" alt="logo">
+                <p class="main__logo-name">CARO GAME</p>
+            </div>
+            <div class="main__middle-btn">
+                <button class="primary-btn main__middle-btn-ctn" id="undo-button">Undo</button>
+                <button class="primary-btn main__middle-btn-ctn" id="redo-button">Redo</button>
+                <button class="primary-btn main__middle-btn-ctn" id="continue-button">Continue</button>
+                <button class="primary-btn" id="reset-button">Reset</button>
+            </div>
+            <div class="main__setting">
+                <span>
+                  <input class="main__setting-input" size="8" type="text" id="board-size-input" placeholder="Board: 10" />
+                </span>
+                <span>
+                  <input class="main__setting-input" size="8" type="text" id="to-win-input" placeholder="To win: 5" />
+                </span>
+                <button id="submit-button">Submit</button>
+            </div>
+            <p class="main__alert-play">Player 1</p>
+            <p class="main__alert"></p>
+            <table class="table">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="main main__right">
+            <p class="main__point" id="player-o-score">0</p>
+            <p class="main__player">Player 2</p>
+            <img src="./assets/images/Opng.png"></img>
+            <p id="winner-player2" class="main__player-win"></p>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
