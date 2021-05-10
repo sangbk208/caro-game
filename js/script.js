@@ -29,8 +29,8 @@ let state = {
     currentPlayer: "x",
     winner: false,
     img:{
-        x: 'url("../assets/images/Xpng.png")',
-        o: 'url("../assets/images/Opng.png")',
+        x: 'url("http://127.0.0.1:5500/caro-game/assets/images/Xpng.png")',
+        o: 'url("http://127.0.0.1:5500/caro-game/assets/images/Opng.png")',
     },
     player: {
       x: [],
